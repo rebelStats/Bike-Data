@@ -41,7 +41,7 @@ def user_input_features():
     return features
 input_df = user_input_features()
 #combine user input with data to create dummy variables from user input
-bike = pd.read_csv('bike_streamlit.csv')
+bike = pd.read_csv('https://raw.githubusercontent.com/rebelStats/Bike-Data/main/Streamlit/bike_streamlit.csv')
 variables= ["member_casual","weekend_weekday","ride_length_seconds","with_friend","time_of_day"]
 bike = bike[variables]
 df = pd.concat([input_df,bike],axis = 0)
