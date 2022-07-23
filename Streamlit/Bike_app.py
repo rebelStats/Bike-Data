@@ -52,7 +52,7 @@ df = df[:1] # select first row (user input row)
 st.subheader('User Input features')
 st.write(df)
 #read regression model
-load_rf = pickle.load(open('bike_rf.pkl','rb'))
+load_rf = pickle.load(open('Streamlit/bike_rf.pkl','rb'))
 
 #make predictions with model
 prediciton = load_rf.predict(df)
